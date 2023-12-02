@@ -48,7 +48,7 @@
     }
 
     function searchUniversities(countryCode) {
-      fetch(`universities.hipolabs.com/search?country=${countryCode}`)
+      fetch(`https://doctor-strange.abdullah-alal20.repl.co/data?q=${countryCode}`)
         .then(response => response.json())
         .then(data => {
           const universityList = document.getElementById('universityList');
